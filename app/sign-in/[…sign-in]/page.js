@@ -4,6 +4,7 @@ import { SignIn } from '@clerk/nextjs'
 import Link from 'next/link'
 
 export default function SignUpPage() {
+  return(
     <>
     <AppBar position="static" sx={{backgroundColor: '#3f51b5'}}>
     <Toolbar>
@@ -13,6 +14,11 @@ export default function SignUpPage() {
       <Button color="inherit">
         <Link href="/login" passHref>
           Login
+        </Link>
+      </Button>      
+      <Button color="inherit">
+        <Link href="/sign-in" passHref>
+          sign-in
         </Link>
       </Button>
     </Toolbar>
@@ -30,4 +36,4 @@ export default function SignUpPage() {
   <SignIn />
 </Box>
 </>
-}
+)}

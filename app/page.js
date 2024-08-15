@@ -1,3 +1,10 @@
+import Image from "next/image"
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
+import { Container, AppBar, Toolbar, Typography, Box, Button, Grid} from "@mui/material"
+import { Head } from "next/head"
+
+
+
 export default function Home() {
   const handleSubmit = async () => {
     const checkoutSession = await fetch('/api/checkout_sessions', {
